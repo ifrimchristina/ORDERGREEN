@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ordergreen - Contact</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <script src="js/contact.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="top-bar">
+      <img
+        onclick="toggleSidebar()"
+        class="sidebar-icon"
+        src="/assets/images/menu-icon.png" alt=""
+      />
+      <img onclick="window.location.href = '/'" class="logo" alt="logo" src="assets/images/ordergreen.png" />
+      <div class="profile">
+        <p class="name">Nume</p>
+      </div>
+      <div class="logout-btn" onclick="logout()">LOGOUT</div>
+      <div class="vertical-separator"></div>
+      <div class="shop-cart">
+        <img src="assets/images/cart.png" alt="" />
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="profile">
+        <img src="assets/images/profile.png" alt="" />
+        <p class="name">Name</p>
+        <div onclick="logout()" class="logout-btn">LOGOUT</div>
+      </div>
+      <div class="menu">
+        <a href="/shop">Shop</a>
+        <a href="/food-rand">Food randomizer</a>
+        <a href="/faq">FAQs</a>
+        <a class="selected">Contact</a>
+      </div>
+    </div>
+    <div class="menu">
+        <a href="/shop">Shop</a>
+        <a href="/food-rand">Food randomizer</a>
+        <a href="/faq">FAQs</a>
+      <a class="selected">Contact</a>
+    </div>
+    <div class="contact main">
+      <p class="title">Contact us</p>
+      <p class="description">
+        This survey serves to improve the experience and user interaction with
+        our online shop. Your feedback helps us improve the user experience in
+        the future. Thank you for your input!
+      </p>
+      <div class="survey">
+        <p>Is this the first time you have visited our website?</p>
+        <div class="slider">
+          <div class="option selected">
+            <p>NO</p>
+          </div>
+          <div class="option">
+            <p>YES</p>
+          </div>
+        </div>
+        <p>Did you make a purchase on our website?</p>
+        <div class="slider">
+          <div class="option selected">
+            <p>NO</p>
+          </div>
+          <div class="option">
+            <p>YES</p>
+          </div>
+        </div>
+        <p>Please tell us more about your interaction with our website.</p>
+        <textarea></textarea>
+        <p>Did you find the products that you were looking for?</p>
+        <div class="slider">
+          <div class="option selected">
+            <p>NO</p>
+          </div>
+          <div class="option">
+            <p>SOME OF IT</p>
+          </div>
+          <div class="option">
+            <p>YES</p>
+          </div>
+        </div>
+        <p>How easy it was to browse over the website?</p>
+        <div class="slider">
+          <div class="option selected">
+            <p>Very difficult</p>
+          </div>
+          <div class="option">
+            <p>Difficult</p>
+          </div>
+          <div class="option">
+            <p>Average</p>
+          </div>
+          <div class="option">
+            <p>Easy</p>
+          </div>
+          <div class="option">
+            <p>Very easy</p>
+          </div>
+        </div>
+        <p>What is the overall impression of the site?</p>
+        <div class="slider">
+            <div class="option selected">
+              <p>1 - 4</p>
+            </div>
+            <div class="option">
+              <p>5 - 8</p>
+            </div>
+            <div class="option">
+              <p>9 - 10</p>
+            </div>
+          </div>
+          <p>Suggestions to help us improve the website.</p>
+        <textarea></textarea>
+        <!-- <p>Final step:</p>
+        <input id="email" type="text" name="text" placeholder="Email"></input>
+        <input id="phone" type="number" name="phone" placeholder="Phone no."></input> -->
+        <div onclick="sendSurvey()" class="send-btn"><p>Send</p></div>
+      </div>
+    </div>
+    <div class="copyright-banner">
+      <p>All rights reserved by Ordergreen Team :)</p>
+    </div>
+  </body>
+</html>

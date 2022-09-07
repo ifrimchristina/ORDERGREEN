@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ordergreen</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="top-bar">
+      <img
+        onclick="toggleSidebar()"
+        class="sidebar-icon"
+        src="/assets/images/menu-icon.png"
+      />
+      <img class="logo" alt="logo" src="assets/images/ordergreen.png" />
+      <div class="profile">
+        <p class="name">Nume</p>
+      </div>
+      <div class="logout-btn" onclick="logout()">LOGOUT</div>
+      <div class="vertical-separator"></div>
+      <div class="shop-cart">
+        <img src="assets/images/cart.png" />
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="profile">
+        <img src="assets/images/profile.png" />
+        <p class="name">Name</p>
+        <div onclick="logout()" class="logout-btn">LOGOUT</div>
+      </div>
+      <div class="menu">
+        <a href="/shop">Shop</a>
+        <a href="/food-rand">Food randomizer</a>
+        <a href="/faq">FAQs</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+    <div class="menu">
+      <a href="/shop">Shop</a>
+      <a href="/food-rand">Food randomizer</a>
+      <a href="/faq">FAQs</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="about main">
+      <img class="logo" alt="logo" src="assets/images/ordergreen.png" />
+      <div class="about__ordergreen">
+        <p class="title">Ordergreen</p>
+        <img src="/assets/images/vegetables.png" />
+        <p class="description">
+          Welcome! This is Ordergreen :) Here you will find a lot of fresh food
+          ready to be delivered to you. Take a look and don't hesitate to feel
+          healthy!
+        </p>
+        <a href="/shop">Shop now</a>
+      </div>
+      <div class="about__team">
+        <p>Meet the team</p>
+        <div class="team">
+          <div class="team__member">
+            <img class="picture" src="/assets/images/team2.jpg" />
+            <p class="name">Christina Ifrim</p>
+            <p class="role">Designer</p>
+            <p class="email">christina.ifrim@og.com</p>
+          </div>
+          <div class="team__member">
+            <img class="picture" src="/assets/images/team1.jpeg" />
+            <p class="name">Kenan Husic</p>
+            <p class="role">Lead Dev</p>
+            <p class="email">kenan.husic@og.com</p>
+          </div>
+          <div class="team__member">
+            <img class="picture" src="/assets/images/team3.jpg" />
+            <p class="name">Taha Muhammad Imran</p>
+            <p class="role">UX Engineer</p>
+            <p class="email">taha.imran@og.com</p>
+          </div>
+          <div class="team__member">
+            <img class="picture" src="/assets/images/team4.jpg" />
+            <p class="name">Adam Ibragimov</p>
+            <p class="role">Recruiter</p>
+            <p class="email">adam.imbragimov@og.com</p>
+          </div>
+        </div>
+        <a>Contact us!</a>
+      </div>
+    </div>
+    <div class="copyright-banner">
+      <p>All rights reserved by Ordergreen Team :)</p>
+    </div>
+  </body>
+</html>

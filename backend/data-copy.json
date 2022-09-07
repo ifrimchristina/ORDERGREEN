@@ -1,0 +1,61 @@
+{
+    "users" : [
+        {
+            "name" : "Christina",
+            "email" : "christina.ifrim@og.com",
+            "password" : "123456"
+        }
+    ],
+    "items" : [
+        {
+            "id" : 1,
+            "qty" : 0,
+            "title" : "Orange",
+            "price" : 1.99,
+            "image" : "https://pngimg.com/uploads/orange/orange_PNG777.png"
+        },
+        {
+            "id" : 2,
+            "qty" : 2,
+            "title" : "Apple",
+            "price" : 2.5,
+            "image" : "https://pngfolio.com/images/all_img/1637340868apple-png.png"
+        },
+        {
+            "id" : 3,
+            "qty" : 6,
+            "title" : "Grapes",
+            "price" : 3.2,
+            "image" : "https://static.wixstatic.com/media/2cd43b_023aa3c412a84ff0a443fc4af4812e56~mv2.png/v1/fill/w_320,h_311,q_90/2cd43b_023aa3c412a84ff0a443fc4af4812e56~mv2.png"
+        },
+        {
+            "id" : 4,
+            "qty" : 1,
+            "title" : "Pear",
+            "price" : 2.2,
+            "image" : "https://png2.cleanpng.com/dy/fd712c024cd9265db9b766b5007679fb/L0KzQYm3U8I0N5duj5H0aYP2gLBuTfF0cZJzReJuYYKwg8X2gBsueJl0jNHwcnHzeMq0jBxqfpYyh9t1LXb1hbr7TgBmaaMyTdNrNHG6QIS5WMQ1QGczUKY5MkK1Q4m4VcIyP2k9TqkAMUa4PsH1h5==/kisspng-asian-pear-stock-photography-olive-oil-fruit-pear-5ab4a703284486.840222381521788675165.png"
+        },
+        {
+            "id" : 5,
+            "qty" : 0,
+            "title" : "Peach",
+            "price" : 6.3,
+            "image" : "https://png2.cleanpng.com/dy/86878b76ea223c6390da39efe7b4d1fc/L0KzQYi4UsA0N2hnTpGAYUK3coXrg8M5QJM9SpC8MEO4RIq5U8E2OWM4Tac5M0a1Q4K9TwBvbz==/5a24b4dc388b82.3035492315123550362316.png"
+        },
+        {
+            "id" : 6,
+            "qty" : 3,
+            "title" : "Tomato",
+            "price" : 1.8,
+            "image" : "https://png2.cleanpng.com/dy/14f8ab43ede721f6c46d6404ec6297c8/L0KzQYi4UcI5N2RrfpGAYUHnQ4iBUsI5bWJpS5C9M0ezQYq9V8E2OWI9TqY6OUS0Roi8TwBvbz==/5a1d378228e1d3.4370196715118641941675.png"
+        },
+        {
+            "id" : 7,
+            "qty" : 2,
+            "title" : "Cucumber",
+            "price" : 2.9,
+            "image" : "https://png2.cleanpng.com/dy/9aee534513de5c619df4a00433192ee7/L0KzQYi4UsE4N2E5S5GAYUO5QIG5WcRnbmU3UJCDNUO0Roi8UME2OWQ5UKo9MkW2Qoi8TwBvbz==/5a3600294ff428.8531675015134884253275.png"
+        }
+    ]
+
+}

@@ -1,0 +1,162 @@
+body {
+  background: #f5f5f5;
+  font-family: "roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.ordergreen {
+  height: 25vw;
+  margin-bottom: 7vw;
+  margin-left: 3vw;
+}
+
+form {
+  position: absolute;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s;
+}
+
+form.login {
+  opacity: 1;
+  z-index: 1;
+}
+
+form.signup {
+  opacity: 0;
+  z-index: -1;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  background: _#fff;
+  border: none;
+  outline: none;
+  margin: 8px 0;
+  color: #383838;
+  font-size: 14px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-family: "roboto", sans-serif;
+  transition: 0.5s;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+input::placeholder {
+  text-transform: capitalize;
+}
+
+input:focus {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  background: #383838;
+  color: #fff;
+  border-radius: 15px;
+  text-transform: capitalize;
+  font-size: 14px;
+  border: 1px solid #383838;
+  border-radius: 10px;
+  cursor: pointer;
+  display: block;
+  margin: 20px 0;
+  transition: 0.5s;
+}
+
+.submit-btn:hover {
+  background-color: #605e5e;
+}
+
+.link {
+  text-decoration: none;
+  text-transform: initial;
+  color: #383838;
+  font-weight: 700;
+  margin: 0 0 0 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #383838;
+  text-decoration: underline;
+}
+
+.banner {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+
+.banner > p {
+  margin: 5px;
+  padding: 0;
+}
+
+.status {
+  height: 20px;
+  font-weight: 700;
+  transition: opacity 0.5s;
+  opacity: 0;
+  margin-top: 5px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.copyright-banner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    background-color: #118a39;
+}
+
+.copyright-banner > p {
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .ordergreen {
+    height: 8vw;
+    margin-bottom: 3vw;
+    margin-left: 2vw;
+  }
+
+  form {
+    width: 25vw;
+  }
+
+  input {
+    border-radius: 0.8vw;
+    height: 3vw;
+    font-size: 1vw;
+  }
+
+  .submit-btn {
+    border-radius: 0.8vw;
+    height: 3vw;
+    font-size: 1vw;
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ordergreen - Shop</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/shop.css" />
+    <script src="js/shop.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="top-bar">
+      <img
+        onclick="toggleSidebar()"
+        class="sidebar-icon"
+        src="/assets/images/menu-icon.png"
+      />
+      <img
+        onclick="window.location.href = '/'"
+        class="logo"
+        alt="logo"
+        src="assets/images/ordergreen.png"
+      />
+      <div class="profile">
+        <p class="name">Nume</p>
+      </div>
+      <div class="logout-btn" onclick="logout()">LOGOUT</div>
+      <div class="vertical-separator"></div>
+      <div class="shop-cart">
+        <img src="assets/images/cart.png" />
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="profile">
+        <img src="assets/images/profile.png" />
+        <p class="name">Name</p>
+        <div onclick="logout()" class="logout-btn">LOGOUT</div>
+      </div>
+      <div class="menu">
+        <a class="selected">Shop</a>
+        <a href="/food-rand">Food randomizer</a>
+        <a href="/faq">FAQs</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+    <div class="menu">
+      <a class="selected">Shop</a>
+      <a href="/food-rand">Food randomizer</a>
+      <a href="/faq">FAQs</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="shop main">
+      <p class="title">Shop</p>
+      <p class="description">
+        Here are the items that we are currently offering:
+      </p>
+      <div class="items"></div>
+    </div>
+    <div class="copyright-banner">
+      <p>All rights reserved by Ordergreen Team :)</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ordergreen - Food randomizer</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/food-rand.css" />
+    <script src="js/food-rand.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="top-bar">
+      <img
+        onclick="toggleSidebar()"
+        class="sidebar-icon"
+        src="/assets/images/menu-icon.png"
+      />
+      <img
+        onclick="window.location.href = '/'"
+        class="logo"
+        alt="logo"
+        src="assets/images/ordergreen.png"
+      />
+      <div class="profile">
+        <p class="name">Nume</p>
+      </div>
+      <div class="logout-btn" onclick="logout()">LOGOUT</div>
+      <div class="vertical-separator"></div>
+      <div class="shop-cart">
+        <img src="assets/images/cart.png" />
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="profile">
+        <img src="assets/images/profile.png" />
+        <p class="name">Name</p>
+        <div onclick="logout()" class="logout-btn">LOGOUT</div>
+      </div>
+      <div class="menu">
+        <a href="/shop">Shop</a>
+        <a class="selected">Food randomizer</a>
+        <a href="/faq">FAQs</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+    <div class="menu">
+      <a href="/shop">Shop</a>
+      <a class="selected">Food randomizer</a>
+      <a href="/faq">FAQs</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="food-randomizer main">
+      <p class="title">Food randomizer</p>
+      <p>Do you want a random meal that you can cook? Push the button below!</p>
+      <div class="generate-btn" onclick="generateMeal()">Generate!</div>
+      <div class="meal">
+        <a class="meal__video"></a>
+        <p class="meal__title"></p>
+        <div class="meal__ingredients"></div>
+        <p class="meal__instructions"></p>
+      </div>
+    </div>
+    <div class="copyright-banner">
+      <p>All rights reserved by Ordergreen Team :)</p>
+    </div>
+  </body>
+</html>

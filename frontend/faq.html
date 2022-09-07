@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ordergreen - FAQ</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/faq.css" />
+    <script src="js/faq.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="top-bar">
+      <img
+        onclick="toggleSidebar()"
+        class="sidebar-icon"
+        src="/assets/images/menu-icon.png"
+      />
+      <img
+        onclick="window.location.href = '/'"
+        class="logo"
+        alt="logo"
+        src="assets/images/ordergreen.png"
+      />
+      <div class="profile">
+        <p class="name">Nume</p>
+      </div>
+      <div class="logout-btn" onclick="logout()">LOGOUT</div>
+      <div class="vertical-separator"></div>
+      <div class="shop-cart">
+        <img src="assets/images/cart.png" />
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="profile">
+        <img src="assets/images/profile.png" />
+        <p class="name">Name</p>
+        <div onclick="logout()" class="logout-btn">LOGOUT</div>
+      </div>
+      <div class="menu">
+        <a href="/shop">Shop</a>
+        <a href="/food-rand">Food randomizer</a>
+        <a class="selected">FAQs</a>
+        <a href="/contact">Contact</a>
+      </div>
+    </div>
+    <div class="menu">
+      <a href="/shop">Shop</a>
+      <a href="/food-rand">Food randomizer</a>
+      <a class="selected">FAQs</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="faq main">
+      <p class="title">FAQ</p>
+      <div class="question">
+        <img src="/assets/images/plus.png" />
+        <div class="title-wrapper">
+          <p class="title">What is ordergreen?</p>
+        </div>
+        <p class="answer">
+          Ordergreen is an online shop that aims to connects customers to
+          smaller businesses and farmer markets and to be able to deliver the
+          purchased produce through environment-friendly means.
+        </p>
+      </div>
+      <div class="question">
+        <img src="/assets/images/plus.png" />
+        <div class="title-wrapper">
+          <p class="title">What is our mission?</p>
+        </div>
+        <p class="answer">
+          Our official mission statement is to be able to connect customers to
+          the farmer markets and smaller business through our website. We want
+          to be able to deliver your purchase with little to no carbon
+          footprint.
+        </p>
+      </div>
+      <div class="question">
+        <img src="/assets/images/plus.png" />
+        <div class="title-wrapper">
+          <p class="title">What is the delivery time?</p>
+        </div>
+        <p class="answer">
+          It takes around 50 minutes to 2 hours depending on where you live.
+        </p>
+      </div>
+      <div class="question">
+        <img src="/assets/images/plus.png" />
+        <div class="title-wrapper">
+          <p class="title">What is the best email to reach at?</p>
+        </div>
+        <p class="answer">
+          The best email for any inquiries is ordergreen@ordergreen.com!
+        </p>
+      </div>
+      <div class="question">
+        <img src="/assets/images/plus.png" />
+        <div class="title-wrapper">
+          <p class="title">Where can I share my thoughts?</p>
+        </div>
+        <p class="answer">You can give feedback in feedback page.</p>
+      </div>
+      <div class="question">
+        <img src="/assets/images/plus.png" />
+        <div class="title-wrapper">
+          <p class="title">What is the best time to contact us?</p>
+        </div>
+        <p class="answer">
+          The best time to contact us is 24/7! We are always available to answer
+          any questions.
+        </p>
+      </div>
+    </div>
+    <div class="copyright-banner">
+      <p>All rights reserved by Ordergreen Team :)</p>
+    </div>
+  </body>
+</html>

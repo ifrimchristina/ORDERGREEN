@@ -1,0 +1,452 @@
+body {
+  background: #f5f5f5;
+  font-family: "roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  padding-bottom: 4px;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  z-index: 1;
+}
+
+.top-bar .sidebar-icon {
+  width: 25px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  cursor: pointer;
+}
+
+.top-bar .logo {
+  width: 170px;
+}
+
+.top-bar .profile,
+.top-bar .logout-btn {
+  display: none;
+}
+
+.top-bar .shop-cart {
+  cursor: pointer;
+}
+
+.top-bar .shop-cart > img {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  height: 32px;
+  transition: 0.3s;
+}
+
+.sidebar {
+  position: absolute;
+  margin-top: 55px;
+  width: 0px;
+  height: 100%;
+  background-color: rgb(237, 237, 237);
+  overflow: hidden;
+  transition: width 0.5s;
+  z-index: 1;
+  padding-bottom: 10px;
+}
+
+.sidebar .profile {
+  position: relative;
+  background-color: white;
+  margin: 5px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sidebar .profile > img {
+  height: 20px;
+  margin-left: 15px;
+}
+
+.sidebar .profile .name {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 10px;
+}
+
+.sidebar .profile .logout-btn {
+  position: absolute;
+  right: 10px;
+  background-color: black;
+  color: white;
+  padding: 6px 10px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 8px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.side .profile .logout-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.menu {
+    display: none;
+}
+
+.sidebar .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: black;
+  background-color: white;
+}
+
+.menu > a {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 0;
+  height: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s;
+  white-space: nowrap;
+  text-decoration: none;
+    color: black;
+}
+
+.menu a.selected {
+    background-color: #acacac;
+    font-weight: bold;
+    cursor: default;
+  }
+
+.menu > a:hover {
+  background-color: #acacac;
+  font-weight: bold;
+}
+
+.about {
+  transition: filter 0.5s;
+  background-color: #f5f5f5;
+}
+
+.about > img {
+    display: none;
+}
+
+.about .about__ordergreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .about__ordergreen .title {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 4px;
+  margin: 5px;
+  color: black;
+  margin-top: 20vw;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.about .about__ordergreen > img {
+  width: 70%;
+}
+
+.about .about__ordergreen .description {
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  padding: 0 40px;
+}
+
+.about .about__ordergreen a {
+  background-color: #118a39;
+  border: 2px solid #118a39;
+  color: white;
+  padding: 10px 20px;
+  font-size: 12px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  display: block;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.about .about__team > p {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+
+.about .about__team .team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.about .about__team .team .team__member {
+  display: flex;
+  margin: 10px 0;
+  width: 65vw;
+  padding: 10px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 7vw;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.about .about__team .team .team__member > img {
+  margin-top: 10px;
+  width: 30vw;
+  border-radius: 30px 30px 0 0;
+}
+
+.about .about__team .team .team__member .name {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 10px 5px 5px 5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about .about__team .team .team__member .role {
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 5px;
+  text-transform: uppercase;
+}
+
+.about .about__team .team .team__member .email {
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin: 5px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.copyright-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  background-color: #118a39;
+}
+
+.copyright-banner > p {
+  color: white;
+  margin: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .top-bar {
+    height: 50px;
+  }
+
+  .top-bar .logo {
+    display: none;
+  }
+
+  .about > img {
+    position: absolute;
+    display: block;
+    width: 30vw;
+    left: 50%;
+    top: 7vw;
+    transform: translateX(-50%);
+    z-index: 2;
+    transition: 0.3s;
+  }
+
+  .top-bar .sidebar-icon {
+    display: none;
+  }
+
+  .top-bar .profile {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 180px;
+  }
+
+  .top-bar .profile p {
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: black;
+  }
+
+  .top-bar .profile .name {
+    font-weight: bold;
+  }
+
+  .top-bar .logout-btn {
+    position: absolute;
+    right: 65px;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    margin-top: 5px;
+    padding: 6px 18px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    display: block;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .top-bar .logout-btn:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .top-bar .vertical-separator {
+    position: absolute;
+    right: 53px;
+    top: 15px;
+    height: 25px;
+    background-color: black;
+    width: 1px;
+  }
+
+  .top-bar .shop-cart > img {
+    right: 13px;
+    height: 35px;
+    top: 10px;
+  }
+
+
+  .about .about__ordergreen {
+    margin-top: 200px;
+  }
+
+  .about .about__ordergreen .title {
+    display: none;
+  }
+
+  .about .about__ordergreen > img {
+    width: 60%;
+    object-fit: cover;
+  }
+
+  .menu {
+    position: fixed;
+    z-index: 1;
+    top: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    color: black;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+  }
+  
+  .menu > a {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 5px;
+    height: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+    white-space: nowrap;
+    border-radius: 0.5vw;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menu > a:hover {
+    background-color: #acacac;
+    font-weight: bold;
+  }
+
+  .about .about__ordergreen .description {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .about .about__ordergreen > a:hover {
+    background-color: white;
+    color: #118a39;
+  }
+
+  .about .about__team {
+    background-color: rgb(51, 50, 50);
+    margin-top: 20px;
+    padding-top: 5px;
+  }
+
+  .about .about__team > p {
+    color: white;
+    font-size: 20px;
+    
+  }
+
+  .about .about__team .team {
+    flex-direction: row;
+  }
+
+  .about .about__team .team .team__member {
+    width: 15vw;
+    margin: 10px;
+    border-radius: 2vw;
+    background-color: white;
+  }
+
+  .about .about__team .team .team__member > img {
+    width: 10vw;
+  }
+}

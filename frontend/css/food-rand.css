@@ -1,0 +1,122 @@
+body {
+  background: #f5f5f5;
+  font-family: "roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.food-randomizer {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  align-items: center;
+  transition: 0.5s;
+  margin: auto;
+  padding: 0 10vw 30px 10vw;
+  transition: filter 0.5s;
+  background-color: #fbf8f8;
+}
+
+.food-randomizer > .title {
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 4px;
+  color: black;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.food-randomizer > p {
+  text-align: center;
+}
+
+.food-randomizer .generate-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  border: 2px solid #4a8441;
+  border-radius: 3vw;
+  cursor: pointer;
+  color: white;
+  background-color: #4a8441;
+  letter-spacing: 1px;
+  font-size: 3.5vw;
+  transition: 0.5s;
+}
+
+.food-randomizer .generate-btn:hover {
+  background-color: white;
+  color: #4a8441;
+}
+
+.food-randomizer .meal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-randomizer .meal .meal__title {
+  font-size: 5vw;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.food-randomizer .meal .meal__image {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.food-randomizer .meal > a {
+  width: 30%;
+}
+
+.food-randomizer .meal .meal__video {
+  width: 100%;
+  cursor: pointer;
+}
+
+.food-randomizer .meal .meal__instructions {
+  text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+  .food-randomizer {
+    background-color: transparent;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    max-width: 1000px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    border-radius: 3vw;
+  }
+  .top-bar .logo {
+    display: block !important;
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .food-randomizer .generate-btn {
+    border-radius: 1vw;
+    font-size: 1vw;
+  }
+
+  .food-randomizer .meal .meal__title {
+    font-size: 2vw;
+  }
+
+  .food-randomizer .meal .meal__image {
+    width: 50%;
+    border-radius: 10px;
+  }
+
+  .food-randomizer .meal > a {
+    width: 20%;
+  }
+}

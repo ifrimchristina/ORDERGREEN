@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ordergreen - Log in</title>
+
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="js/login.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <form class="login" onsubmit="return false">
+      <img src="assets/images/ordergreen.png" alt="" class="ordergreen" />
+      <input type="email" name="email" id="email" placeholder="email" />
+      <input
+        type="password"
+        name="password"
+        autocomplete="off"
+        id="password"
+        placeholder="password"
+      />
+      <button onclick="login()" class="submit-btn" name="submit">log in</button>
+      <div class="banner">
+        <p>Don't have an account?</p>
+        <p class="link" onclick="switchForms()">Create one now!</p>
+      </div>
+      <p class="status"></p>
+    </form>
+    <form class="signup" onsubmit="return false">
+      <img src="assets/images/ordergreen.png" alt="" class="ordergreen" />
+      <input type="email" name="email" id="email" placeholder="email" />
+      <input
+        type="password"
+        name="password"
+        autocomplete="off"
+        id="password"
+        placeholder="password"
+      />
+      <input name="name" id="name" placeholder="name" />
+      <button onclick="signup()" class="submit-btn" name="submit">
+        Create account
+      </button>
+      <div class="banner">
+        <p>Already have an account?</p>
+        <p class="link" onclick="switchForms()">Log in here!</p>
+      </div>
+      <p class="status"></p>
+    </form>
+
+    <div class="copyright-banner">
+      <p>All rights reserved by Ordergreen Team :)</p>
+    </div>
+  </body>
+</html>
